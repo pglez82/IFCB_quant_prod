@@ -3,3 +3,6 @@ training
 validation
 IFCB.csv.zip
 .vscode
+results
+.ipynb_checkpoints/
+nohup.out
