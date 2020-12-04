@@ -6,3 +6,4 @@ IFCB.csv.zip
 results
 .ipynb_checkpoints/
 nohup.out
+*.pt
