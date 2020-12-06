@@ -1,11 +1,12 @@
 # IFCB_quant_prod
 ## Introduction
-Here we need the following things:
-1. Function `prepareImages` in order to proper resize all the images (so they are sutable for the neural network).
-2. Function `computeDeepFeatures`that will compute all the deep features for a directory of images (using a model).
-3. Once we have the deep features we need the quantification library. We have to take into account that we need to train a model so we have another option here.
+We have to Jupyter Notebooks here. One is for finetuning the CNN, the other is for showing how to quantify. The former can be used as it is to fine tune the models to the plankton dataset. The latter should be replaced by a webservice that returns the quantification results for a given new sample.
 
-Idea: use pytorch to finetune a resnet (we already have it done). Just quantify using the outputs of the resnet and passing it to the quantification lib. That should be quite easy overall and cleaner.
+### IFCB_FT
+This finetunes a resnet to the plankton dataset. It saves everything to disk so it can be used by the quantification notebook.
+
+### IFCB_quant
+Uses the quantification library to compute the prevalence of each class in an unlabelled sample. 
 
 
 
